@@ -9,6 +9,8 @@
     * for [Mac](https://docs.docker.com/desktop/mac/install/)
 2. VS Code
     * [Download link](https://code.visualstudio.com/download)
+3. Azure Data Studio
+    * [Link to download](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16&tabs=redhat-install%2Credhat-uninstall)
 
 # Steps
 1. Pull the Microsoft Sql Server docker image

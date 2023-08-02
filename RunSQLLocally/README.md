@@ -60,6 +60,8 @@ Please check example below :
 
 9. Lets run some sample query
 ```
+-- NOTE: Please Highlight only one query to Run
+
 set showplan_all off ; -- If showplan_all is "on" then we will not get Graph View instead we get Text View 
 
 
@@ -79,6 +81,8 @@ Output:
 10. Lets run same query to get Text View with order of execution 
 
 ```
+-- NOTE: Please Highlight only one query to Run
+
 set showplan_all on ;
 
 

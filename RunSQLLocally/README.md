@@ -55,5 +55,44 @@ Please check example below :
 7. Check the tables
     ![see all tables](SeeAllTables.png)
 
+8. Click on **Enable Actual Plan** 
+![click enable plan](ClickEnablePlan.png)
+
+9. Lets run some sample query
+```
+set showplan_all off ; -- If showplan_all is "on" then we will not get Graph View instead we get Text View 
+
+
+select 
+    MONTH(ModifiedDate)
+from 
+    Sales.SalesOrderDetail
+where 
+    rowguid like '%f9%' 
+order by 
+    ModifiedDate;
+```
+Output:
+
+![order of execution](../GraphView.png)
+
+10. Lets run same query to get Text View with order of execution 
+
+```
+set showplan_all on ;
+
+
+select 
+    MONTH(ModifiedDate)
+from 
+    Sales.SalesOrderDetail
+where 
+    rowguid like '%f9%' 
+order by 
+    ModifiedDate;
+```
+Output:
+
+![order of execution](../OrderOfExecution.png)
 
 Thank you, Happy Coding :smile:
